@@ -15,68 +15,144 @@
     <h1>Baron Galleyner's Pizza Party in the Sky</h1>
     <p>invite a slice into the sky for a great party!</p>
     <form id="submit">
-      <select name="meats" class="toppings">
-        <option value="0">--please select a topping--</option>
-        <option value="3">Pepperoni</option>
-        <option value="3">Ham</option>
-        <option value="3">Beef</option>
-        <option value="3">Salami</option>
-        <option value="3">Italian Sausage</option>
-        <option value="3">Premium Chicken</option>
-        <option value="3">Bacon</option>
-        <option value="3">Philly Steak</option>
-      </select>
-      <select name="meats" class="toppings">
-        <option value="0">--please select a topping--</option>
-        <option value="3">Pepperoni</option>
-        <option value="3">Ham</option>
-        <option value="3">Beef</option>
-        <option value="3">Salami</option>
-        <option value="3">Italian Sausage</option>
-        <option value="3">Premium Chicken</option>
-        <option value="3">Bacon</option>
-        <option value="3">Philly Steak</option>
-      </select>
-      <select name="meats" class="toppings">
-        <option value="0">--please select a topping--</option>
-        <option value="3">Pepperoni</option>
-        <option value="3">Ham</option>
-        <option value="3">Beef</option>
-        <option value="3">Salami</option>
-        <option value="3">Italian Sausage</option>
-        <option value="3">Premium Chicken</option>
-        <option value="3">Bacon</option>
-        <option value="3">Philly Steak</option>
-      </select>
-      <select name="meats" class="toppings">
-        <option value="0">--please select a topping--</option>
-        <option value="3">Pepperoni</option>
-        <option value="3">Ham</option>
-        <option value="3">Beef</option>
-        <option value="3">Salami</option>
-        <option value="3">Italian Sausage</option>
-        <option value="3">Premium Chicken</option>
-        <option value="3">Bacon</option>
-        <option value="3">Philly Steak</option>
-      </select>
-      <select name="toppings" class="toppings">
-        <option value="0">--please select a topping--</option>
-        <option value="1">Hot Buffalo Sauce</option>
-        <option value="1">Jalapeno Peppers</option>
-        <option value="1">Onions</option>
-        <option value="1">Banana Peppers</option>
-        <option value="1">Diced Tomatoes</option>
-        <option value="1">Black Olives</option>
-        <option value="1">Mushrooms</option>
-        <option value="1">Pineapple</option>
-        <option value="1">Shredded Provolone Cheese</option>
-        <option value="1">Cheddar Cheese</option>
-        <option value="1">Green Peppers</option>
-        <option value="1">Spinach</option>
-        <option value="1">Roasted Red Peppers</option>
-        <option value="1">Feta Cheese</option>
-        <option value="1">Shredded Parmesan Asiago</option>
-      </select>
+      <div id="meatSelector">
+        <select name="meats" class="meats">
+          <option value="0">--please select a topping--</option>
+          <option value="3">Pepperoni</option>
+          <option value="3">Ham</option>
+          <option value="3">Beef</option>
+          <option value="3">Salami</option>
+          <option value="3">Italian Sausage</option>
+          <option value="3">Premium Chicken</option>
+          <option value="3">Bacon</option>
+          <option value="3">Philly Steak</option>
+        </select>
+        <select name="meats" class="meats">
+          <option value="0">--please select a topping--</option>
+          <option value="3">Pepperoni</option>
+          <option value="3">Ham</option>
+          <option value="3">Beef</option>
+          <option value="3">Salami</option>
+          <option value="3">Italian Sausage</option>
+          <option value="3">Premium Chicken</option>
+          <option value="3">Bacon</option>
+          <option value="3">Philly Steak</option>
+        </select>
+        <select name="meats" class="meats">
+          <option value="0">--please select a topping--</option>
+          <option value="3">Pepperoni</option>
+          <option value="3">Ham</option>
+          <option value="3">Beef</option>
+          <option value="3">Salami</option>
+          <option value="3">Italian Sausage</option>
+          <option value="3">Premium Chicken</option>
+          <option value="3">Bacon</option>
+          <option value="3">Philly Steak</option>
+        </select>
+        <select name="meats" class="meats">
+          <option value="0">--please select a topping--</option>
+          <option value="3">Pepperoni</option>
+          <option value="3">Ham</option>
+          <option value="3">Beef</option>
+          <option value="3">Salami</option>
+          <option value="3">Italian Sausage</option>
+          <option value="3">Premium Chicken</option>
+          <option value="3">Bacon</option>
+          <option value="3">Philly Steak</option>
+        </select>
+      </div>
+      <div id="toppingSelector">
+        <select name="toppings" class="toppings">
+          <option value="0">--please select a topping--</option>
+          <option value="1">Hot Buffalo Sauce</option>
+          <option value="1">Jalapeno Peppers</option>
+          <option value="1">Onions</option>
+          <option value="1">Banana Peppers</option>
+          <option value="1">Diced Tomatoes</option>
+          <option value="1">Black Olives</option>
+          <option value="1">Mushrooms</option>
+          <option value="1">Pineapple</option>
+          <option value="1">Shredded Provolone Cheese</option>
+          <option value="1">Cheddar Cheese</option>
+          <option value="1">Green Peppers</option>
+          <option value="1">Spinach</option>
+          <option value="1">Roasted Red Peppers</option>
+          <option value="1">Feta Cheese</option>
+          <option value="1">Shredded Parmesan Asiago</option>
+        </select>
+        <select name="toppings" class="toppings">
+          <option value="0">--please select a topping--</option>
+          <option value="1">Hot Buffalo Sauce</option>
+          <option value="1">Jalapeno Peppers</option>
+          <option value="1">Onions</option>
+          <option value="1">Banana Peppers</option>
+          <option value="1">Diced Tomatoes</option>
+          <option value="1">Black Olives</option>
+          <option value="1">Mushrooms</option>
+          <option value="1">Pineapple</option>
+          <option value="1">Shredded Provolone Cheese</option>
+          <option value="1">Cheddar Cheese</option>
+          <option value="1">Green Peppers</option>
+          <option value="1">Spinach</option>
+          <option value="1">Roasted Red Peppers</option>
+          <option value="1">Feta Cheese</option>
+          <option value="1">Shredded Parmesan Asiago</option>
+        </select>
+        <select name="toppings" class="toppings">
+          <option value="0">--please select a topping--</option>
+          <option value="1">Hot Buffalo Sauce</option>
+          <option value="1">Jalapeno Peppers</option>
+          <option value="1">Onions</option>
+          <option value="1">Banana Peppers</option>
+          <option value="1">Diced Tomatoes</option>
+          <option value="1">Black Olives</option>
+          <option value="1">Mushrooms</option>
+          <option value="1">Pineapple</option>
+          <option value="1">Shredded Provolone Cheese</option>
+          <option value="1">Cheddar Cheese</option>
+          <option value="1">Green Peppers</option>
+          <option value="1">Spinach</option>
+          <option value="1">Roasted Red Peppers</option>
+          <option value="1">Feta Cheese</option>
+          <option value="1">Shredded Parmesan Asiago</option>
+        </select>
+        <select name="toppings" class="toppings">
+          <option value="0">--please select a topping--</option>
+          <option value="1">Hot Buffalo Sauce</option>
+          <option value="1">Jalapeno Peppers</option>
+          <option value="1">Onions</option>
+          <option value="1">Banana Peppers</option>
+          <option value="1">Diced Tomatoes</option>
+          <option value="1">Black Olives</option>
+          <option value="1">Mushrooms</option>
+          <option value="1">Pineapple</option>
+          <option value="1">Shredded Provolone Cheese</option>
+          <option value="1">Cheddar Cheese</option>
+          <option value="1">Green Peppers</option>
+          <option value="1">Spinach</option>
+          <option value="1">Roasted Red Peppers</option>
+          <option value="1">Feta Cheese</option>
+          <option value="1">Shredded Parmesan Asiago</option>
+        </select>
+        <select name="toppings" class="toppings">
+          <option value="0">--please select a topping--</option>
+          <option value="1">Hot Buffalo Sauce</option>
+          <option value="1">Jalapeno Peppers</option>
+          <option value="1">Onions</option>
+          <option value="1">Banana Peppers</option>
+          <option value="1">Diced Tomatoes</option>
+          <option value="1">Black Olives</option>
+          <option value="1">Mushrooms</option>
+          <option value="1">Pineapple</option>
+          <option value="1">Shredded Provolone Cheese</option>
+          <option value="1">Cheddar Cheese</option>
+          <option value="1">Green Peppers</option>
+          <option value="1">Spinach</option>
+          <option value="1">Roasted Red Peppers</option>
+          <option value="1">Feta Cheese</option>
+          <option value="1">Shredded Parmesan Asiago</option>
+        </select>
+      </div>
       <button type="submit">Add this shit</button>
     </form>
   </div>

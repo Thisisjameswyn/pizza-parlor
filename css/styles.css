@@ -1,0 +1,11 @@
+#toppingSelector{
+  padding: 10px;
+  flex: content;
+  width:75%;
+}
+
+#meatSelector{
+  padding: 10px;
+  flex: content;
+  width:75%;
+}

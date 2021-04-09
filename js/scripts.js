@@ -21,13 +21,17 @@ Pizza.prototype.addTopping = function(topping) {
 $(document).ready(function () {
   $("form#submit").submit(function (event) { 
     event.preventDefault();
-    let toppings = $(".toppings").map(function() {
-      return this.value;
+    let meats = $(".meats option:selected").map(function() {
+      return [this.text, this.value];
+    })
+    let toppings = $(".toppings option:selected").map(function() {
+      return [this.text, this.value];
     })
 
     let myZa = new Pizza(toppings);
 
-    console.log(myZa);
+    console.log(meats);
+    console.log(toppings);
     
   });
 });
