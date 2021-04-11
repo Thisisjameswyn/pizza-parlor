@@ -21,12 +21,27 @@ Pizza.prototype.addTopping = function(topping) {
 $(document).ready(function () {
   $("form#submit").submit(function (event) { 
     event.preventDefault();
-    let meats = $(".meats option:selected").map(function() {
-      return [this.text, this.value];
-    })
-    let toppings = $(".toppings option:selected").map(function() {
-      return [this.text, this.value];
-    })
+    // let meats = $(".meats option:selected").map(function() {
+    //   return [this.text, this.value];
+    // })
+    // let toppings = $(".toppings option:selected").map(function() {
+    //   return [this.text, this.value];
+    // })
+
+    // let checkBoxes = Array.from(document.getElementsByName("toppings"));
+    let checkBoxes = document.getElementsByName("toppings");
+    let vals = "";
+    for (let i=0; i < checkBoxes.length ;i++) 
+    {
+        if (checkBoxes[i].checked) 
+        {
+            vals += ","+checkBoxes[i].value;
+        }
+    }
+    if (vals) vals = vals.substring(1);
+    console.log("Checkboxes are " + vals);
+    // let checkbox = document.getElementById("vehicle1");
+    // console.log(checkbox);
 
     let myZa = new Pizza(toppings);
 
