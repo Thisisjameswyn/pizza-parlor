@@ -43,10 +43,6 @@ $(document).ready(function () {
     // let checkbox = document.getElementById("vehicle1");
     // console.log(checkbox);
 
-    let myZa = new Pizza(toppings);
-
-    console.log(meats);
-    console.log(toppings);
-    
+    // let myZa = new Pizza(toppings);
   });
 });
