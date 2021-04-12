@@ -40,24 +40,20 @@ https://github.com/Thisisjameswyn/pizza-parlor
 
 * Describe: Pizza()
 Test: "It should correctly build a pizza object with given parameters"
-Expect(new Pizza(size, topping1, topping2, topping3).toEqual(size, topping1, topping2, topping3);
+Expect(new Pizza(size, meats, tops).toEqual(size, meats, tops);
 
 * Describe: Pizza.prototype.calcCharge()
-Test: "It should calculate the cost to be 0 if no size or toppings are selected"
-Expect(calcCharge(0, 0, 0, 0).toEqual([0]);
+Test: "It should calculate only the cost of the size if no meats or toppings are selected"
+Expect(calcCharge(m, 0, 0).toEqual(5);
 
-* Test: "It should calculate the cost to be 8 if large size and no toppings are selected"
-Expect(calcCharge(3, 0, 0, 0).toEqual([8]);
+* Test: "It should calculate only the cost of the size and meats if no toppings are selected"
+Expect(calcCharge(m, 1, 0).toEqual(8);
 
-* Test: "It should calculate the cost to be 10 if large size and one topping is selected"
-Expect(calcCharge(3, 1, 0, 0).toEqual([10]);
+* Test: "It should calculate the cost of the size, meats and toppings if each is selected"
+Expect(calcCharge(m, 1, 1).toEqual(9);
 
-* Test: "It should calculate the cost to be 12 if large size and two toppings are selected"
-Expect(calcCharge(3, 1, 1, 0).toEqual([12]);
-
-* Test: "It should calculate the cost to be 14 if large size and 3 toppings are selected"
-Expect(calcCharge(3, 1, 1, 1).toEqual([14]);
-
+* Test: "It should calculate the cost to be 43 if med size and all meats and all toppings are selected"
+Expect(calcCharge(m, 8, 14).toEqual(43);
 
 
 ## License
