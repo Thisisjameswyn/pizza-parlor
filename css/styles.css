@@ -20,18 +20,23 @@ body {
 }
 
 #sizeSelect {
-  font-size: 25px;
+  font-size: 15px;
 }
 
 #meatSelect {
-  font-size: 25px;
+  font-size: 15px;
 }
 
 #toppingSelect {
-  font-size: 25px;
+  font-size: 15px;
 }
 
 #zaButton {
   text-align: center;
   margin-top: 20px;
+}
+
+.directions {
+  font-size: 20px;
+  text-decoration: underline;
 }
