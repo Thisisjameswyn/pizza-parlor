@@ -6,7 +6,7 @@ function Pizza(size, meat, tops){
 
 Pizza.prototype.calcPrice = function() {
   let cost = this.size+this.meat+this.toppings;
-  console.log(cost);
+  return cost;
 }
 
 
@@ -34,6 +34,7 @@ $(document).ready(function () {
         }
     }
     let myZa = new Pizza(size, mVals, tVals);
-    myZa.calcPrice();
+    // myZa.calcPrice();
+    $("#outPut").text(`Your order will be ${myZa.calcPrice()} buckaroos and might be delicious`);
   });
 });
