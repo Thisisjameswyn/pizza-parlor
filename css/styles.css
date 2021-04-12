@@ -1,5 +1,37 @@
 #outPut {
   margin: 10px;
   padding: 20px;
-  font-size: 20px;
+  font-size: 30px;
+}
+
+body {
+  color: rgba(82, 56, 0, 0.801);
+  background-image: url("../img/birdParty.png");
+  background-size: 100%;
+  background-repeat: repeat-y;
+}
+
+.container {
+  margin-top: 20px;
+  border: rgba(87, 115, 131, 0.733) 20px double;
+  border-radius: 50px;
+  background-color: rgba(255, 248, 239, 0.822);
+  padding: 40px;
+}
+
+#sizeSelect {
+  font-size: 25px;
+}
+
+#meatSelect {
+  font-size: 25px;
+}
+
+#toppingSelect {
+  font-size: 25px;
+}
+
+#zaButton {
+  text-align: center;
+  margin-top: 20px;
 }

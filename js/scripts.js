@@ -35,6 +35,6 @@ $(document).ready(function () {
     }
     let myZa = new Pizza(size, mVals, tVals);
     // myZa.calcPrice();
-    $("#outPut").text(`Your order will be ${myZa.calcPrice()} buckaroos and might be delicious`);
+    $("#outPut").text(`Your order will be $${myZa.calcPrice()}.00 buckaroos and might be delicious! Tweet Tweet!`);
   });
 });

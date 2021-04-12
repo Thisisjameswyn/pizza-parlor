@@ -13,10 +13,10 @@
 <body>
   <div class="container">
     <h1>Baron Galleyner's Pizza Party in the Sky</h1>
-    <h3>Invite a slice into the sky for a great party!</h3><br>
+    <h3>Invite a pie into the sky for a great party!</h3><br>
     <form id="submit">
       <div id="sizeSelect">
-        <input type="radio" id="small" name="size" value="4">
+        <input type="radio" id="small" name="size" value="4" checked>
         <label for="small"><strong>S</strong>parrow</label><br>
         <input type="radio" id="medium" name="size" value="5">
         <label for="medium"><strong>M</strong>agpie</label><br>
@@ -75,11 +75,11 @@
           <label for="topping14">Shredded Parmesan Asiago</label>
         </div>
       </div>
-      <button type="submit">Order 'Za</button>
+      <div id="zaButton">
+        <button type="submit" class="btn btn-info">Order 'Za</button>
+      </div>
     </form>
-
     <div id="outPut">
-
     </div>
   </div>
 </body>
