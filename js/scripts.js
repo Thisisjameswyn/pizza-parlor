@@ -1,33 +1,26 @@
-//choose pizza size (Sparrow,Magpie,Laridae,Xiongguanlong,)
-//choose sauce (red, white, bbq, salsa)
-//choose toppings (cheese, pepperoni, salami, hamburger, sausage, pinneapple, olives, bell pepper, sun dried tomatoes)
-//
-//
-//construct pizza, pass size value, build with toppings array
-//forEach (topping) add to array and factor out cost + + ++ ++ ++ +
-//return cost to user
-//cat party in the sky!!!!!!!!
-
-function Pizza(_toppings){
-  this.size = 0;
-  this.toppings = _toppings;
+function Pizza(size, meat, tops){
+  this.size = size;
+  this.meat = meat;
+  this.toppings = tops;
 }
 
-Pizza.prototype.addTopping = function(topping) {
-  this.toppings.push(topping);
+Pizza.prototype.calcPrice = function() {
+  let cost = this.size+this.meat+this.toppings;
+  console.log(cost);
 }
 
 
 $(document).ready(function () {
   $("form#submit").submit(function (event) { 
     event.preventDefault();
+    let size = parseInt($("input:radio:checked").val());
     let meatsChecked = document.getElementsByName("meats");
     let mVals = 0;
     for (let i=0; i < meatsChecked.length ;i++) 
     {
         if (meatsChecked[i].checked) 
         {
-          mVals ++;
+          mVals += 3;
         }
     }
 
@@ -37,12 +30,10 @@ $(document).ready(function () {
     {
         if (toppingsChecked[i].checked) 
         {
-          tVals ++;
+          tVals += 1;
         }
     }
-    console.log("Meat checkboxes are " + mVals);
-    console.log("Toppings checkboxes are " + tVals);
-
-    // let myZa = new Pizza(toppings);
+    let myZa = new Pizza(size, mVals, tVals);
+    myZa.calcPrice();
   });
 });
