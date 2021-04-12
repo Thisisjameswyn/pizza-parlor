@@ -21,27 +21,27 @@ Pizza.prototype.addTopping = function(topping) {
 $(document).ready(function () {
   $("form#submit").submit(function (event) { 
     event.preventDefault();
-    // let meats = $(".meats option:selected").map(function() {
-    //   return [this.text, this.value];
-    // })
-    // let toppings = $(".toppings option:selected").map(function() {
-    //   return [this.text, this.value];
-    // })
-
-    // let checkBoxes = Array.from(document.getElementsByName("toppings"));
-    let checkBoxes = document.getElementsByName("toppings");
-    let vals = "";
-    for (let i=0; i < checkBoxes.length ;i++) 
+    let meatsChecked = document.getElementsByName("meats");
+    let mVals = 0;
+    for (let i=0; i < meatsChecked.length ;i++) 
     {
-        if (checkBoxes[i].checked) 
+        if (meatsChecked[i].checked) 
         {
-            vals += ","+checkBoxes[i].value;
+          mVals ++;
         }
     }
-    if (vals) vals = vals.substring(1);
-    console.log("Checkboxes are " + vals);
-    // let checkbox = document.getElementById("vehicle1");
-    // console.log(checkbox);
+
+    let toppingsChecked = document.getElementsByName("toppings");
+    let tVals = 0;
+    for (let i=0; i < toppingsChecked.length ;i++) 
+    {
+        if (toppingsChecked[i].checked) 
+        {
+          tVals ++;
+        }
+    }
+    console.log("Meat checkboxes are " + mVals);
+    console.log("Toppings checkboxes are " + tVals);
 
     // let myZa = new Pizza(toppings);
   });
