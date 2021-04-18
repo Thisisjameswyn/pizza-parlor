@@ -18,20 +18,20 @@ $(document).ready(function () {
     let mVals = 0;
     for (let i=0; i < meatsChecked.length ;i++) 
     {
-        if (meatsChecked[i].checked) 
-        {
-          mVals += 3;
-        }
+      if (meatsChecked[i].checked) 
+      {
+        mVals += 3;
+      }
     }
 
     let toppingsChecked = document.getElementsByName("toppings");
     let tVals = 0;
     for (let i=0; i < toppingsChecked.length ;i++) 
     {
-        if (toppingsChecked[i].checked) 
-        {
-          tVals += 1;
-        }
+      if (toppingsChecked[i].checked) 
+      {
+        tVals += 1;
+      }
     }
     let myZa = new Pizza(size, mVals, tVals);
     $("#outPut").text(`Your order will be $${myZa.calcPrice()}.00 buckaroos and might be delicious! Tweet Tweet!`);
